@@ -29,7 +29,7 @@ static PyMethodDef cppmodule_methods[] = {
 static PyModuleDef cppModule = [] {
     PyModuleDef result{ PyModuleDef_HEAD_INIT };
     result.m_name = "cppmodule";
-    result.m_doc = "Example Python extension module created from Python";
+    result.m_doc = "Example Python extension module created from C++";
     result.m_size = -1;
 
     return result;
