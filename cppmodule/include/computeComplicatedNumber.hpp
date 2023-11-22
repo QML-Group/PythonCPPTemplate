@@ -1,5 +1,7 @@
+#include <cstdint>
+
 namespace cppmodule {
 
-int computeComplicatedNumber(long);
+std::int64_t computeComplicatedNumber(std::int64_t);
 
 }

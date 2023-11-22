@@ -2,7 +2,7 @@
 
 namespace cppmodule {
 
-int computeComplicatedNumber(long aNumber) {
+std::int64_t computeComplicatedNumber(std::int64_t aNumber) {
     return aNumber * aNumber;
 }
 

@@ -9,9 +9,9 @@ static PyObject *computeComplicatedNumber(PyObject *self, PyObject *aNumber) {
         return nullptr;
     }
 
-    long cppArgument = PyLong_AsLong(aNumber);
+    auto cppArgument = PyLong_AsLong(aNumber);
 
-    int cppResult = cppmodule::computeComplicatedNumber(cppArgument);
+    auto cppResult = cppmodule::computeComplicatedNumber(cppArgument);
 
     PyObject *pythonResult = PyLong_FromLong(cppResult);
 
