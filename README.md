@@ -4,13 +4,13 @@ This repository is an example of a Python program that uses a C++ function for p
 
 # Installation
 
-In this directory, run `pip install .`
+In this directory, run `pip install .`, optionally with `-e`.
 
 
 # Explanations
 
-`src/pythoncpptemplate` is where the main Python codebase is.
-This is where should be used all the user-friendlyness of Python.
+`pythoncpptemplate` is where the main Python codebase is.
+This is where should be used all the user-friendliness of Python.
 
 It defines a function which calls `pythoncpptemplate.cppmodule.computeComplicatedNumber`.
 

@@ -11,7 +11,7 @@ static PyObject *computeComplicatedNumber(PyObject *self, PyObject *aNumber) {
 
     auto cppArgument = PyLong_AsLong(aNumber);
 
-    auto cppResult = cppmodule::computeComplicatedNumber(cppArgument);
+    auto cppResult = cpp::computeComplicatedNumber(cppArgument);
 
     PyObject *pythonResult = PyLong_FromLong(cppResult);
 
@@ -28,7 +28,7 @@ static PyMethodDef cppmodule_methods[] = {
 
 static PyModuleDef cppModule = [] {
     PyModuleDef result{ PyModuleDef_HEAD_INIT };
-    result.m_name = "cppmodule";
+    result.m_name = "cpp";
     result.m_doc = "Example Python extension module created from C++";
     result.m_size = -1;
 
@@ -36,7 +36,7 @@ static PyModuleDef cppModule = [] {
 }();
 
 PyMODINIT_FUNC
-PyInit_cppmodule(void) {
+PyInit_cpp(void) {
     PyObject *m;
     m = PyModule_Create(&cppModule);
     if (m == nullptr) {

@@ -6,6 +6,3 @@ build-backend = "setuptools.build_meta"
 name = "pythoncpptemplate"
 version = "0.0.1"
 dependencies = []
-
-[project.scripts]
-myFunction = "src.pythoncpptemplate.myFunction:myFunction"
